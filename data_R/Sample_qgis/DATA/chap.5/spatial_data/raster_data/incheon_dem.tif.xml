@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xml:lang="ko"><Esri><CreaDate>20150226</CreaDate><CreaTime>21002900</CreaTime><ArcGISFormat>1.0</ArcGISFormat><SyncOnce>TRUE</SyncOnce><DataProperties><lineage><Process ToolSource="c:\program files (x86)\arcgis\desktop10.1\ArcToolbox\Toolboxes\Spatial Analyst Tools.tbx\ExtractByMask" Date="20150226" Time="210029">ExtractByMask incheon_dem.tif incheon M:\DATA\chap.4\answers\incheon_dem.tif</Process></lineage></DataProperties></Esri></metadata>

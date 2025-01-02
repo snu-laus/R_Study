@@ -77,19 +77,44 @@ git clone https://github.com/gbjun7333/LAUS_R.git
 ```
 
 2. 교재에 필요한 R 패키지들을 설치합니다:
-```rstudio
-# 공간분석 기본 패키지
+# (1) RTools 패키지 설치 (Windows 사용자만 해당)
+# https://cran.r-project.org/bin/windows/Rtools/ 에서 운영체제에 맞는 버전 설치
+
+# (2) 공간분석 및 시각화 관련 패키지 설치
+# a. 공간분석 기본 패키지
 install.packages(c("sp", "rgdal", "rgeos"))
+# 참고: rgdal, rgeos는 2023년 10월 이후 CRAN 지원 중단
+# 대안 패키지 설치: sf, terra
+install.packages("remotes")
+remotes::install_github("r-spatial/sf")
+install.packages("terra", type = "source")
 
-# 시각화 패키지
+# b. 시각화 패키지
 install.packages(c("ggmap", "tmap"))
+# tmap 최신버전 필요시:
+remotes::install_github('r-tmap/tmap')
 
-# 공간통계 패키지
+# c. 공간통계 패키지
 install.packages(c("spatstat", "spdep"))
+install.packages('spDataLarge', 
+                repos='https://nowosad.github.io/drat/', 
+                type='source')
 
-# 래스터 및 공간보간 패키지
+# d. 래스터 및 공간보간 패키지
 install.packages(c("raster", "gstat", "spgwr"))
-```
+
+# (3) 라이브러리 로드
+# 필요한 패키지만 선택적으로 로드하여 사용
+library(sp)
+library(sf)
+library(terra)
+library(ggmap)
+library(tmap)
+library(spatstat)
+library(spdep)
+library(raster)
+library(gstat)
+library(spgwr)
 
 
 ## 기여방법

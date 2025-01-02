@@ -77,12 +77,14 @@ git clone https://github.com/gbjun7333/LAUS_R.git
 ```
 
 2. 교재에 필요한 R 패키지들을 설치합니다:
-# (1) RTools 패키지 설치 (Windows 사용자만 해당)
-# https://cran.r-project.org/bin/windows/Rtools/ 에서 운영체제에 맞는 버전 설치
+```bash
+#(1) RTools 패키지 설치 (Windows 사용자만 해당)
+https://cran.r-project.org/bin/windows/Rtools/ 에서 운영체제에 맞는 버전 설치
 
 # (2) 공간분석 및 시각화 관련 패키지 설치
 # a. 공간분석 기본 패키지
 install.packages(c("sp", "rgdal", "rgeos"))
+
 # 참고: rgdal, rgeos는 2023년 10월 이후 CRAN 지원 중단
 # 대안 패키지 설치: sf, terra
 install.packages("remotes")
@@ -115,7 +117,7 @@ library(spdep)
 library(raster)
 library(gstat)
 library(spgwr)
-
+```
 
 ## 기여방법
 - Pull Request는 언제나 환영합니다

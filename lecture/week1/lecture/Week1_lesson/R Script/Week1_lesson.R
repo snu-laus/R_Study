@@ -273,6 +273,9 @@ plot(spolysdf2,axes=T,col=1:2) #변환된 결과 출력
 #4.2.1. 테이블 데이터 불러오기#
 #데이터 로드
 fl = read.csv("C:/Users/USER/Desktop/Week1_lesson/Flood_shelter.csv")
+#혹은 CSV 파일이 온라인에 있는 경우 아래와 같이 직접 불러올 수 있음
+fl = read.csv('https://raw.githubusercontent.com/snu-laus/R_Study/refs/heads/main/lecture/week1/lecture/Week1_lesson/Flood_Shelter.csv',sep=',')
+
 
 str(fl) #데이터 구조 확인
 
